@@ -1,0 +1,31 @@
+{
+    "name": "wataru775/learning_phpunit",
+    "type": "project",
+    "description": "Wataru learn PHPUnit Project",
+    "keywords": [
+        "phpunit"
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "authors": [
+        {
+            "name": "wataru",
+            "email": "wataru775@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/"
+        ],
+        "psr-4": {
+            "Tests\\Unit\\org\\mmpp\\learning\\phpunit\\": "tests/Unit",
+            "Tests\\Feature\\org\\mmpp\\learning\\phpunit\\": "tests/Feature"
+        }
+    }
+}
